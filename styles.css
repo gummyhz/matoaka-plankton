@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* W&M Official Colors */
+    /* Primary */
+    --wm-green: #004E38;
+    --wm-gold: #866F45;
+    --wm-silver: #D8DCDB;
+    --white: #FFFFFF;
+    /* Secondary Greens */
+    --dark-green: #00231B;
+    --griffin-green: #28463D;
+    --patina: #76A190;
+    --sage: #B8DDB1;
+    --moss: #789D4A;
+    /* Spirit Color Palette */
+    /* wm-green, wm-silver, white as well */
+    --wm-spirit-gold: #FDB714;
+    /* Tertiary Color Palette */
+    --midnight-blue: #0D3E4A;
+    --marine-blue: #247B8C;
+    --slate-blue: #7399C1;
+    --royal-purple: #673E65;
+    --brick-red: #964A37;
+}
+
+body {
+    font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+    color: var(--dark-green);
+    background: var(--sage);
+}
