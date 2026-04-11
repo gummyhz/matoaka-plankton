@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Plankton in Lake Matoaka</title>
-        <link rel="icon" href="./assets/logo.png" type="image/png">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Hello Plankton</h1>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plankton in Lake Matoaka</title>
+    <!-- <link rel="icon" href="./assets/logo.png" type="image/png"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <span id="hero-title">The Plankton of Lake Matoaka</span> <span id="hero-title-small">(and some friends)</span>
+            <br/>
+            <span id="hero-subtitle">A visual gallery and info center</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- based on  https://codepen.io/nebo/pen/ONXejO -->
+  <div class="top">
+      <ul>
+            <li class="all-img rotifer"><img src="https://farm8.staticflickr.com/7564/16097104758_e60521f7fa_b.jpg" onclick="openLightbox(this.src)"></li>
+            <li><img src="https://picjumbo.imgix.net/HNCK4011.jpg?q=40&w=1650&sharp=30"></li>
+            <li><img src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=46a85a1451e47aea5152ade8299f2894" onclick="openLightbox(this.src)"></li>
+            <li><img src="https://picjumbo.imgix.net/HNCK3991.jpg?q=40&w=1650&sharp=30"></li>
+            <li><img src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></li>
+            <li><img src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></li>
+            <li><a href="#img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a></li>
+            <li><a href="#img_8"><img src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a></li>
+            <li><a href="#img_9"><img src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
+            <li><a href="#img_10"><img src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a></li>
+            <li><a href="#img_11"><img src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a></li>
+            <li><a href="#img_12"><img src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a></li>
+            <li><a href="#img_13"><img src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
+            <li><a href="#img_14"><img src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a></li>
+            <li><a href="#img_15"><img src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a></li>
+            <li><a href="#img_16"><img src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a></li>
+        </ul>
+</div>
+
+
+    <div class="border profile-container">
+        <div class="border prof-top-menu">
+            <div class="border prof-top-menu-btn">
+                Habitat
+            </div>
+            <div class="border prof-top-menu-btn">
+                Diet
+            </div>
+            <div class="border prof-top-menu-btn">
+                Predators
+            </div>
+            <div class="border prof-top-menu-btn">
+                Classification
+            </div>
+            <div class="border prof-top-menu-btn">
+                Fun Facts
+            </div>
+        </div>
+        <div class="border prof-main">
+            <div class="border prof-main-img">
+                Gallery
+            </div>
+            <div class="border prof-main-body">
+                Copepod
+            </div>
+        </div>
+        <div class="border prof-info">
+            Info display
+        </div>
+    </div>
+
+
+    <div id="dynamic-lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Large view">
+    </div>
+    <script src="script.js"></script>
+</body>
+https://pagefind.app/docs/sorts/
+https://mixitup-webflow-tutorial.webflow.io/
+https://jekyllrb.com/docs/collections/
 </html>
