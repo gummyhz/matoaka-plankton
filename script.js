@@ -1,14 +1,14 @@
 let currentOrganism = null;   // whichever plankton is open
-let activeTab       = "Habitat";
-let activeImgIndex  = 0;
+let activeTab = "Habitat";
+let activeImgIndex = 0;
 
 const TABS = ["Habitat", "Diet", "Predators", "Classification", "Fun Facts"];
 const TAB_KEYS = {
-  "Habitat":        "habitat",
-  "Diet":           "diet",
-  "Predators":      "predators",
+  "Habitat": "habitat",
+  "Diet": "diet",
+  "Predators": "predators",
   "Classification": "classification",
-  "Fun Facts":      "facts",
+  "Fun Facts": "facts",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function buildGallery() {
   gallery_cont = document.getElementById("gallery-photos");
-  gallery_cont.innerHTML = ""; 
+  gallery_cont.innerHTML = "";
 
   plankton.forEach((organism) => {
     org = document.createElement("div");
@@ -48,6 +48,7 @@ function buildProfileShell() {
     <div class="border prof-main">
       <div class="border prof-main-img" id="prof-gallery">
         <img id="prof-main-photo" src="" alt="">
+        <div id="prof-img-meta" class="prof-img-meta"></div> 
         <div id="prof-thumbs"></div>
       </div>
       <div class="border prof-main-body">
@@ -71,6 +72,21 @@ function buildProfileShell() {
   });
 }
 
+function locationFromPath(src) {
+  // "assets/Berkeley/IMG_0909.JPG" → "Berkeley"
+  const parts = src.split("/");
+  return parts.length >= 2 ? parts[parts.length - 2] : "Unknown";
+}
+
+function renderImageMeta(imgObj) {
+  let box = document.getElementById("prof-img-meta");
+  if (!box) return;
+  box.innerHTML = `
+    <strong> ${imgObj.location}</strong>
+    ${imgObj.notes ? `<span><em>${imgObj.notes}</em></span>` : ""}
+  `;
+}
+
 function openProfile(id) {
   currentOrganism = plankton.find((p) => p.id === id);
   if (!currentOrganism) return;
@@ -79,28 +95,30 @@ function openProfile(id) {
   activeTab = "Habitat";
 
   // Populate static fields
-  document.getElementById("prof-name").textContent  = currentOrganism.name;
+  document.getElementById("prof-name").textContent = currentOrganism.name;
   document.getElementById("prof-latin").textContent = currentOrganism.latinName;
 
   // Populate image gallery
   const mainPhoto = document.getElementById("prof-main-photo");
-  mainPhoto.src = currentOrganism.images[0] || "";
+  mainPhoto.src = currentOrganism.images[0].src;
   mainPhoto.alt = currentOrganism.name;
 
   const thumbs = document.getElementById("prof-thumbs");
   thumbs.innerHTML = "";
-  currentOrganism.images.forEach((src, i) => {
+  currentOrganism.images.forEach((imgObj, i) => {
     const t = document.createElement("img");
-    t.src = src;
+    t.src = imgObj.src;
     t.alt = `${currentOrganism.name} image ${i + 1}`;
     t.className = i === 0 ? "active-thumb" : "";
     t.addEventListener("click", () => {
-      mainPhoto.src = src;
+      mainPhoto.src = imgObj.src;
+      renderImageMeta(imgObj);
       document.querySelectorAll("#prof-thumbs img").forEach((el) => el.classList.remove("active-thumb"));
       t.classList.add("active-thumb");
     });
     thumbs.appendChild(t);
   });
+  renderImageMeta(currentOrganism.images[0]);
 
   // Populate first tab
   renderTabContent("Habitat");
@@ -126,15 +144,18 @@ function switchTab(tab) {
 }
 
 function renderTabContent(tab) {
-  const key  = TAB_KEYS[tab];
+  const key = TAB_KEYS[tab];
   const data = currentOrganism[key];
-  const box  = document.getElementById("prof-info-body");
+  
+  const box = document.getElementById("prof-info-body");
+  
 
   if (Array.isArray(data)) {
     // Fun Facts → bulleted list
     box.innerHTML = "<ul>" + data.map((f) => `<li>${f}</li>`).join("") + "</ul>";
   } else {
-    box.textContent = data;
+    // box.textContent = data;
+    box.innerHTML = data.replace(/\n/g, "<br>");
   }
 }
 
@@ -144,9 +165,9 @@ function closeProfile() {
 }
 
 function toggleProfile(id) {
-    if (currentOrganism && currentOrganism.id == id) {
-        closeProfile()
-    } else {
-        openProfile(id)
-    }
+  if (currentOrganism && currentOrganism.id == id) {
+    closeProfile()
+  } else {
+    openProfile(id)
+  }
 }
