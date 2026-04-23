@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // 37°15'56.3"N 76°43'24.5"W
-var map = L.map('map').setView([37.265639, 76.723472], 13);
+var map = L.map('map').setView([37.271, -76.727], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

@@ -340,5 +340,13 @@ mark {
   max-height: 90%;
 }
 
+.map-container {
+  margin: 1em;
+}
+.map-container h2 {
+  margin-bottom: 1rem;
+}
 
-#map { height: 400px; }
+#map { 
+  height: 600px; 
+}
