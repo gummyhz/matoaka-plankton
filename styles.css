@@ -167,7 +167,6 @@ mark {
 }
 
 
-/* DIV CONTAINING GALLERY AND PROFILES */
 .gallery-container {
     margin: 1em;
 }
@@ -185,20 +184,23 @@ mark {
 
 /* PHOTO GALLERY */
 #gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
     margin: 1em;
     gap: 1rem;
 }
 .gallery-img { 
-  position: relative;
-  float: left;
-  width: 25%;
-  height: 25%;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
+  object-fit: cover;
+  display: block;
 }
 
 /* PROFILE */
 #profile-panel {
-  display: none;           /* JS sets to flex when open */
+  clear: both;
+  display: none; 
   flex-direction: column;
   gap: 0;
   margin: 1em;
@@ -267,6 +269,8 @@ mark {
   display: flex;
   gap: 0.25rem;
   flex-wrap: wrap;
+  max-height: 130px; 
+  overflow-y: auto;
 }
 
 #prof-thumbs img {
@@ -300,4 +304,18 @@ mark {
 }
 #prof-info-body li + li {
   margin-top: 0.4rem;
+}
+.all-img-card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.all-img-caption {
+  background: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  padding: 0.25rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }

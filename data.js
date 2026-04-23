@@ -352,13 +352,174 @@ const plankton = [
     id: "daphnia",
     name: "Daphnia",
     latinName: "Genus Daphnia",
-    thumb: "assets/Berkeley/IMG_0909.JPG",
+    thumb: "assets/Berkeley/IMG_0911.JPG",
     images: [
       {
-        src: "assets/Berkeley/IMG_0909.JPG",
+        src: "assets/Berkeley/IMG_0911.JPG",
         location: "Berkeley",
         notes: ""
+      },
+      {
+        src: "assets/Berkeley/IMG_0917.JPG",
+        location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/Berkeley/IMG_0918.JPG",
+        location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/Berkeley/IMG_0921.JPG",
+        location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/Berkeley/IMG_0926.JPG",
+        location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/Berkeley/IMG_0928.JPG",
+        location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_5385.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_5389.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_5393.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1105.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1115.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1120.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1140.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1149.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1150.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1166.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1170.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1175.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1183.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1184.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1187.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1188.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1196.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1215.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1219.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1222.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1235.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1236.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1239.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1244.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1246.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1269.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1277.JPG",
+        location: "Strawberry Creek",
+        notes: ""
       }
+      
     ],
     habitat: "habitat",
     diet: "diet",
@@ -370,11 +531,166 @@ const plankton = [
     id: "rotifer",
     name: "Rotifer",
     latinName: "Phylum Rotifera",
-    thumb: "assets/Berkeley/IMG_0909.JPG",
+    thumb: "assets/StrawberryCreek/IMG_1245.JPG",
     images: [
       {
-        src: "assets/Berkeley/IMG_0909.JPG",
+        src: "assets/StrawberryCreek/IMG_1245.JPG",
+        location: "Strawberry Creek",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/Berkeley/IMG_0926.JPG",
         location: "Berkeley",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_5390.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1121.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1124.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1129.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1132.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1137.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1141.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis and egg"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1156.JPG",
+        location: "Ice House Cove",
+        notes: "Keratella cochlearis"
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1169.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1179.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1187.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1190.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1191.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1192.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1195.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1202.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1213.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1220.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1223.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/JamestownRoad/IMG_1224.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1244.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1248.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1249.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1250.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1255.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1257.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1259.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1268.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1270.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1284.JPG",
+        location: "Strawberry Creek",
         notes: ""
       }
     ],

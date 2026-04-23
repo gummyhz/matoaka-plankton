@@ -1,6 +1,7 @@
-let currentOrganism = null;   // whichever plankton is open
+let currentOrganism = null;
 let activeTab = "Habitat";
 let activeImgIndex = 0;
+let currentView = "critters";
 
 const TABS = ["Habitat", "Diet", "Predators", "Classification", "Fun Facts"];
 const TAB_KEYS = {
@@ -14,6 +15,8 @@ const TAB_KEYS = {
 document.addEventListener("DOMContentLoaded", () => {
   buildGallery();
   buildProfileShell();
+  document.querySelectorAll(".modes button")[0].addEventListener("click", () => switchView("critters"));
+  document.querySelectorAll(".modes button")[1].addEventListener("click", () => switchView("all"));
 });
 
 function buildGallery() {
@@ -30,8 +33,15 @@ function buildGallery() {
     img.classList.add('gallery-img')
     img.classList.add('border')
     img.addEventListener("click", () => toggleProfile(organism.id));
+    const caption = document.createElement("div");
+    caption.className = "all-img-caption";
+    caption.innerHTML = `
+        <strong>${organism.name}</strong>
+      `;
+
 
     org.appendChild(img);
+    org.appendChild(caption);
     gallery_cont.appendChild(org);
   });
 }
@@ -146,9 +156,9 @@ function switchTab(tab) {
 function renderTabContent(tab) {
   const key = TAB_KEYS[tab];
   const data = currentOrganism[key];
-  
+
   const box = document.getElementById("prof-info-body");
-  
+
 
   if (Array.isArray(data)) {
     // Fun Facts → bulleted list
@@ -170,4 +180,44 @@ function toggleProfile(id) {
   } else {
     openProfile(id)
   }
+}
+
+function switchView(view) {
+  currentView = view;
+  closeProfile();
+
+  if (view === "critters") {
+    buildGallery();
+  } else {
+    buildAllImagesGallery();
+  }
+}
+
+function buildAllImagesGallery() {
+  const gallery_cont = document.getElementById("gallery-photos");
+  gallery_cont.innerHTML = "";
+
+  plankton.forEach((organism) => {
+    organism.images.forEach((imgObj) => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "all-img-card";
+
+      const img = document.createElement("img");
+      img.src = imgObj.src;
+      img.alt = organism.name;
+      img.classList.add("gallery-img", "border");
+
+      const caption = document.createElement("div");
+      caption.className = "all-img-caption";
+      caption.innerHTML = `
+        <strong>${organism.name}</strong>
+        <span>at ${imgObj.location}</span>
+        ${imgObj.notes ? `<em>${imgObj.notes}</em>` : ""}
+      `;
+
+      wrapper.appendChild(img);
+      wrapper.appendChild(caption);
+      gallery_cont.appendChild(wrapper);
+    });
+  });
 }
