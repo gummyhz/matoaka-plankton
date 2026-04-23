@@ -26,7 +26,16 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-
+var marker_berkeley = L.marker([37.26928, -76.72772]).addTo(map);
+marker_berkeley.bindPopup("Berkeley Stream")
+var marker_college= L.marker([37.27455, -76.72408]).addTo(map);
+marker_college.bindPopup("College Creek")
+var marker_icehouse = L.marker([37.26761, -76.72095]).addTo(map);
+marker_icehouse.bindPopup("Ice House Cove")
+var marker_jamestown= L.marker([37.26373, -76.72219]).addTo(map);
+marker_jamestown.bindPopup("Jamestown Road")
+var marker_strawberry= L.marker([37.26574, -76.72881]).addTo(map);
+marker_strawberry.bindPopup("Strawberry Creek")
 
 
 
