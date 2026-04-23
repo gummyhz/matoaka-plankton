@@ -339,3 +339,6 @@ mark {
   max-width: 90%;
   max-height: 90%;
 }
+
+
+#map { height: 400px; }

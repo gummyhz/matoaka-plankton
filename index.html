@@ -13,21 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap" rel="stylesheet">
-
+    
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
     <div class="hero-image">
-  
+
         <div class="hero-text">
-            <span id="hero-title">The Plankton of Lake Matoaka</span> 
-  
-            <br/>
+            <span id="hero-title">The Plankton of Lake Matoaka</span>
+
+            <br />
             <span id="hero-subtitle">A visual gallery and info center</span>
         </div>
     </div>
+
+     <div id="map"></div>
 
     <div class="gallery-container">
         <h2>Gallery</h2>
@@ -52,4 +61,5 @@
 <!-- https://pagefind.app/docs/sorts/
 https://mixitup-webflow-tutorial.webflow.io/
 https://jekyllrb.com/docs/collections/ -->
+
 </html>

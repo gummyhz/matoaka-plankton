@@ -20,6 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".modes button")[1].addEventListener("click", () => switchView("all"));
 });
 
+// 37°15'56.3"N 76°43'24.5"W
+var map = L.map('map').setView([37.265639, 76.723472], 13);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+
+
+
 function buildGallery() {
   gallery_cont = document.getElementById("gallery-photos");
   gallery_cont.innerHTML = "";
