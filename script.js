@@ -1,4 +1,5 @@
 let currentOrganism = null;
+let currentImage = null;
 let activeTab = "Habitat";
 let activeImgIndex = 0;
 let currentView = "critters";
@@ -32,7 +33,7 @@ function buildGallery() {
     img.alt = organism.name;
     img.classList.add('gallery-img');
     img.classList.add('border');
-    
+
     img.addEventListener("click", () => toggleProfile(organism.id));
     const caption = document.createElement("div");
     caption.className = "all-img-caption";
@@ -141,7 +142,6 @@ function openProfile(id) {
     btn.classList.toggle("tab-active", btn.dataset.tab === "Habitat");
   });
 
-  // Show the panel, hide the lightbox if open
   document.getElementById("profile-panel").style.display = "flex";
 
   // Smooth scroll to panel
@@ -190,15 +190,52 @@ function switchView(view) {
   closeProfile();
 
   if (view === "critters") {
-    buildGallery();
+    buildGallery(); currentOrganism
   } else {
     buildAllImagesGallery();
+  }
+}
+
+function closePreview() {
+  document.getElementById("img-preview").style.display = "none";
+  document.getElementById("img-preview").replaceChildren();
+  currentImage = null;
+}
+
+function openPreview(src) {
+  const parent = document.getElementById("img-preview");
+  const img = document.createElement("img");
+  // let plank;
+  // plankton.forEach((p) => {
+  //   const image = p.images.find((image) => image.src == src);
+  //   if (image) {
+  //     plank = p;
+  //     currentImage = image;
+  //   }
+  // });
+
+  img.src = src;
+  // img.alt = `${plank.name} image ${src}`;
+  img.id = "#lightbox-img"
+  parent.appendChild(img);
+  parent.classList.add("lightbox-overlay")
+  parent.style.display = "flex";
+  parent.scrollIntoView({ behavior: "smooth", block: "start" });
+
+}
+
+function togglePreview(src) {
+  if (currentImage && currentImage.src == src) {
+    closePreview();
+  } else {
+    openPreview(src);
   }
 }
 
 function buildAllImagesGallery() {
   const gallery_cont = document.getElementById("gallery-photos");
   gallery_cont.innerHTML = "";
+
 
   plankton.forEach((organism) => {
     organism.images.forEach((imgObj) => {
@@ -209,6 +246,7 @@ function buildAllImagesGallery() {
       img.src = imgObj.src;
       img.alt = organism.name;
       img.classList.add("gallery-img", "border");
+      img.addEventListener("click", () => togglePreview(img.getAttribute('src')));
 
       const caption = document.createElement("div");
       caption.className = "all-img-caption";

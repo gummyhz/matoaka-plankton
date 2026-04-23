@@ -34,6 +34,7 @@ body {
     /* padding: 1rem; */
     color: var(--dark-green);
     background: var(--sage);
+    align-content: center;
 }
 
 #hero-title {
@@ -326,4 +327,15 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+}
+
+#img-preview {
+  display: none;
+  align-items: center;
+}
+#img-preview img {
+  display: block;
+  object-fit: contain;
+  max-width: 90%;
+  max-height: 90%;
 }
