@@ -30,8 +30,9 @@ function buildGallery() {
     const img = document.createElement("img");
     img.src = organism.thumb;
     img.alt = organism.name;
-    img.classList.add('gallery-img')
-    img.classList.add('border')
+    img.classList.add('gallery-img');
+    img.classList.add('border');
+    
     img.addEventListener("click", () => toggleProfile(organism.id));
     const caption = document.createElement("div");
     caption.className = "all-img-caption";
@@ -42,6 +43,7 @@ function buildGallery() {
 
     org.appendChild(img);
     org.appendChild(caption);
+    org.classList.add('all-img-card');
     gallery_cont.appendChild(org);
   });
 }

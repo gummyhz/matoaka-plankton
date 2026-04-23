@@ -190,10 +190,10 @@ mark {
     gap: 1rem;
 }
 .gallery-img { 
-  width: 150px;
-  height: 150px;
+  /* width: 200px;
+  height: 200px; */
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -314,7 +314,7 @@ mark {
   margin-top: 0.4rem;
 }
 .all-img-card {
-  width: 150px;
+  width: 20%;
   display: flex;
   flex-direction: column;
 }
