@@ -342,9 +342,9 @@ const plankton = [
       }
 
     ],
-    habitat: "habitat",
-    diet: "diet",
-    predators: "predators",
+    habitat: "Habitat: freshwater and saltwater",
+    diet: "Diet: phytoplankton, detritus, bacteria, sometimes smaller copepod species",
+    predators: "Predators: small fish, plankton, nekton, benthic invertebrates, mammals, birds",
     classification: "Kingdom: Animalia\n Phylum: Arthropoda\n Clade: Pancrustacea\n Superclass: Multicrustacea\n Class: Copepoda",
     facts: ["Fun", "facts"]
   },
@@ -521,9 +521,9 @@ const plankton = [
       }
       
     ],
-    habitat: "habitat",
-    diet: "diet",
-    predators: "predators",
+    habitat: "Habitat: primarily freshwater",
+    diet: "Diet: algae, bacteria, protozoa",
+    predators: "Predators: larvae of invertebrates, fish, midges, ...",
     classification: "Kingdom: Animalia\n  Phylum: Arthropoda\n Clade: Pancrustacea\n Class: Branchiopoda\n Subclass: Phyllopoda\n Superorder: Diplostraca\n Order: Anomopoda\n Family: Daphniidae\n Genus: Daphnia",
     facts: ["Fun", "facts"]
   },
@@ -694,9 +694,9 @@ const plankton = [
         notes: ""
       }
     ],
-    habitat: "Primarily freshwater",
-    diet: "Detritus, bacteria, algae, protozoans",
-    predators: "Copepods, fish, bryozoa, jellyfish, sea stars, tardigrades...",
+    habitat: "Habitat: Primarily freshwater",
+    diet: "Diet: Detritus, bacteria, algae, protozoans",
+    predators: "Predators: Copepods, fish, bryozoa, jellyfish, sea stars, tardigrades...",
     classification: "Kingdom: Animalia\n Subkingdom: Eumetazoa\n Clade: ParaHoxozoa\n Clade: Bilateria\n Clade: Nephrozoa\n Clade: Protostomia\n Clade: Spiralia\n Clade: Gnathifera\n Phylum: Rotifera",
     facts: ["Fun", "Facts"]
   }
