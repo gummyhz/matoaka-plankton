@@ -59,11 +59,12 @@ function buildProfileShell() {
       <div class="border prof-main-img" id="prof-gallery">
         <img id="prof-main-photo" src="" alt="">
         <div id="prof-img-meta" class="prof-img-meta"></div> 
-        <div id="prof-thumbs"></div>
+       
       </div>
       <div class="border prof-main-body">
         <h2 id="prof-name"></h2>
         <p  id="prof-latin"></p>
+         <div id="prof-thumbs"></div>
       </div>
     </div>
 

@@ -205,6 +205,7 @@ mark {
   gap: 0;
   margin: 1em;
   padding: 1rem;
+  max-width: 100%;
 }
 
 /* Close button */
@@ -225,10 +226,13 @@ mark {
 
 .prof-main {
     display: flex;
+
 }
 
 .prof-main-body {
     padding: 1rem;
+    flex: 1;
+    min-width: 0;
 }
 
 .prof-info {
@@ -257,19 +261,23 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  flex: 0 0 50%;        /* fixed at 50% width, won't grow or shrink */
+  max-width: 100%;
 }
 
 #prof-main-photo {
-  width: 100%;
-  object-fit: cover;
+  width: 100%;          /* fills its column */
+  max-height: 400px;
+  object-fit: contain; 
   display: block;
 }
 
 #prof-thumbs {
+  margin-top: 1em;
   display: flex;
   gap: 0.25rem;
   flex-wrap: wrap;
-  max-height: 130px; 
+  max-height: 300px; 
   overflow-y: auto;
 }
 

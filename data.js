@@ -694,9 +694,9 @@ const plankton = [
         notes: ""
       }
     ],
-    habitat: "habitat",
-    diet: "diets",
-    predators: "predators",
+    habitat: "Primarily freshwater",
+    diet: "Detritus, bacteria, algae, protozoans",
+    predators: "Copepods, fish, bryozoa, jellyfish, sea stars, tardigrades...",
     classification: "Kingdom: Animalia\n Subkingdom: Eumetazoa\n Clade: ParaHoxozoa\n Clade: Bilateria\n Clade: Nephrozoa\n Clade: Protostomia\n Clade: Spiralia\n Clade: Gnathifera\n Phylum: Rotifera",
     facts: ["Fun", "Facts"]
   }
