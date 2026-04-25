@@ -519,7 +519,7 @@ const plankton = [
         location: "Strawberry Creek",
         notes: ""
       }
-      
+
     ],
     habitat: "Habitat: primarily freshwater",
     diet: "Diet: algae, bacteria, protozoa",
@@ -699,5 +699,209 @@ const plankton = [
     predators: "Predators: Copepods, fish, bryozoa, jellyfish, sea stars, tardigrades...",
     classification: "Kingdom: Animalia\n Subkingdom: Eumetazoa\n Clade: ParaHoxozoa\n Clade: Bilateria\n Clade: Nephrozoa\n Clade: Protostomia\n Clade: Spiralia\n Clade: Gnathifera\n Phylum: Rotifera",
     facts: ["Fun", "Facts"]
-  }
+  },
+  {
+    id: "navicula",
+    name: "Navicula",
+    latinName: "Genus Navicula",
+    thumb: "assets/CollegeCreek/IMG_0869.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0869.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_0874.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_0875.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "Domain: Eukaryota\n Clade: Sar\n Clade: Stramenopiles\n Division: Ochrophyta\n Clade: Bacillariophta\n Class: Bacillariophyceae",
+    facts: ["", ""]
+  },
+  {
+    id: "netrium",
+    name: "Netrium",
+    latinName: "Netrium digitus",
+    thumb: "assets/CollegeCreek/IMG_0865.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0865.JPG",
+        location: "College Creek",
+        notes: "Netrium Digitus"
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "Kingdom: Plantae\n Class: Zygnematophyceae\n Order: Zygnematales\n Family: Mesotaeniaceae\n Genus: Netrium",
+    facts: ["", ""]
+  },
+  {
+    id: "surirella",
+    name: "Surirella",
+    latinName: "Genus Surirella",
+    thumb: "assets/CollegeCreek/IMG_0873.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0873.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_0874.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "synedra",
+    name: "Synedra",
+    latinName: "template",
+    thumb: "assets/CollegeCreek/IMG_0872.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0872.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "spirogyra",
+    name: "Spirogyra",
+    latinName: "Genus Spirogyra",
+    thumb: "assets/CollegeCreek/IMG_0878.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0878.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_0877.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "asterionella",
+    name: "Asterionella",
+    latinName: "Genus Asterionellla",
+    thumb: "assets/JamestownRoad/IMG_1201.JPG",
+    images: [
+      {
+        src: "assets/JamestownRoad/IMG_1201.JPG",
+        location: "Jamestown Road",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_5390.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1105.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/IceHouseCove/IMG_1125.JPG",
+        location: "Ice House Cove",
+        notes: ""
+      },
+      {
+        src: "assets/StrawberryCreek/IMG_1257.JPG",
+        location: "Strawberry Creek",
+        notes: ""
+      },
+      
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  // {
+  //   id: "id",
+  //   name: "template",
+  //   latinName: "template",
+  //   thumb: "",
+  //   images: [
+  //     {
+  //       src: "",
+  //       location: "",
+  //       notes: ""
+  //     },
+  //   ],
+  //   habitat: "",
+  //   diet: "",
+  //   predators: "",
+  //   classification: "",
+  //   facts: ["", ""]
+  // },
+  // {
+  //   id: "id",
+  //   name: "template",
+  //   latinName: "template",
+  //   thumb: "",
+  //   images: [
+  //     {
+  //       src: "",
+  //       location: "",
+  //       notes: ""
+  //     },
+  //   ],
+  //   habitat: "",
+  //   diet: "",
+  //   predators: "",
+  //   classification: "",
+  //   facts: ["", ""]
+  // },
+  // {
+  //   id: "id",
+  //   name: "template",
+  //   latinName: "template",
+  //   thumb: "",
+  //   images: [
+  //     {
+  //       src: "",
+  //       location: "",
+  //       notes: ""
+  //     },
+  //   ],
+  //   habitat: "",
+  //   diet: "",
+  //   predators: "",
+  //   classification: "",
+  //   facts: ["", ""]
+  // }
+  
 ];
