@@ -343,8 +343,9 @@ mark {
 .map-container {
   margin: 1em;
 }
-.map-container h2 {
-  margin-bottom: 1rem;
+.map-container p {
+  margin-bottom: 1em;
+  margin-top: 1rem;
 }
 
 #map { 

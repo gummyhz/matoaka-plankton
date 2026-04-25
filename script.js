@@ -23,20 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // 37°15'56.3"N 76°43'24.5"W
 var map = L.map('map').setView([37.271, -76.727], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker_berkeley = L.marker([37.26928, -76.72772]).addTo(map);
-marker_berkeley.bindPopup("Berkeley Stream")
-var marker_college= L.marker([37.27455, -76.72408]).addTo(map);
-marker_college.bindPopup("College Creek")
+marker_berkeley.bindPopup("Berkeley Stream");
+marker_berkeley.on('click', () => buildAllImagesGallery("Berkeley"));
+var marker_college = L.marker([37.27455, -76.72408]).addTo(map);
+marker_college.bindPopup("College Creek");
+marker_college.on('click', () => buildAllImagesGallery("College Creek"));
 var marker_icehouse = L.marker([37.26761, -76.72095]).addTo(map);
-marker_icehouse.bindPopup("Ice House Cove")
-var marker_jamestown= L.marker([37.26373, -76.72219]).addTo(map);
-marker_jamestown.bindPopup("Jamestown Road")
-var marker_strawberry= L.marker([37.26574, -76.72881]).addTo(map);
-marker_strawberry.bindPopup("Strawberry Creek")
-
+marker_icehouse.bindPopup("Ice House Cove");
+marker_icehouse.on('click', () => buildAllImagesGallery("Ice House Cove"));
+var marker_jamestown = L.marker([37.26373, -76.72219]).addTo(map);
+marker_jamestown.bindPopup("Jamestown Road");
+marker_jamestown.on('click', () => buildAllImagesGallery("Ice House Cove"));
+var marker_strawberry = L.marker([37.26574, -76.72881]).addTo(map);
+marker_strawberry.bindPopup("Strawberry Creek");
+marker_strawberry.on('click', () => buildAllImagesGallery("Strawberry Creek"));
 
 
 function buildGallery() {
@@ -209,7 +213,7 @@ function switchView(view) {
   closeProfile();
 
   if (view === "critters") {
-    buildGallery(); currentOrganism
+    buildGallery(); 
   } else {
     buildAllImagesGallery();
   }
@@ -251,33 +255,38 @@ function togglePreview(src) {
   }
 }
 
-function buildAllImagesGallery() {
+function buildAllImagesGallery(site = "all") {
   const gallery_cont = document.getElementById("gallery-photos");
   gallery_cont.innerHTML = "";
 
 
   plankton.forEach((organism) => {
     organism.images.forEach((imgObj) => {
-      const wrapper = document.createElement("div");
-      wrapper.className = "all-img-card";
+      console.log(site);
+      if (site == "all" || imgObj.location == site) {
 
-      const img = document.createElement("img");
-      img.src = imgObj.src;
-      img.alt = organism.name;
-      img.classList.add("gallery-img", "border");
-      img.addEventListener("click", () => togglePreview(img.getAttribute('src')));
 
-      const caption = document.createElement("div");
-      caption.className = "all-img-caption";
-      caption.innerHTML = `
-        <strong>${organism.name}</strong>
-        <span>at ${imgObj.location}</span>
-        ${imgObj.notes ? `<em>${imgObj.notes}</em>` : ""}
-      `;
+        const wrapper = document.createElement("div");
+        wrapper.className = "all-img-card";
 
-      wrapper.appendChild(img);
-      wrapper.appendChild(caption);
-      gallery_cont.appendChild(wrapper);
+        const img = document.createElement("img");
+        img.src = imgObj.src;
+        img.alt = organism.name;
+        img.classList.add("gallery-img", "border");
+        img.addEventListener("click", () => togglePreview(img.getAttribute('src')));
+
+        const caption = document.createElement("div");
+        caption.className = "all-img-caption";
+        caption.innerHTML = `
+          <strong>${organism.name}</strong>
+          <span>at ${imgObj.location}</span>
+          ${imgObj.notes ? `<em>${imgObj.notes}</em>` : ""}
+          `;
+
+        wrapper.appendChild(img);
+        wrapper.appendChild(caption);
+        gallery_cont.appendChild(wrapper);
+      }
     });
   });
 }
