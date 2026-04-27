@@ -803,6 +803,11 @@ const plankton = [
         location: "College Creek",
         notes: ""
       },
+      {
+        src: "assets/CollegeCreek/IMG_0904.JPG",
+        location: "Spirogyra and cladoceran shell",
+        notes: ""
+      },
     ],
     habitat: "",
     diet: "",
@@ -842,6 +847,83 @@ const plankton = [
         notes: ""
       },
       
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "aulacoseira",
+    name: "Aulacoseira",
+    latinName: "Genus Aulacoseira",
+    thumb: "assets/CollegeCreek/IMG_0883.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0883.JPG",
+        location: "CollegeCreek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "zygnema",
+    name: "Zygnema",
+    latinName: "Genus Zygnema",
+    thumb: "assets/CollegeCreek/IMG_0893.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0893.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "id",
+    name: "Mougeotia",
+    latinName: "Genus Mougeotia",
+    thumb: "assets/CollegeCreek/IMG_0898.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0898.JPG",
+        location: "College Creek",
+        notes: ""
+      },
+    ],
+    habitat: "",
+    diet: "",
+    predators: "",
+    classification: "",
+    facts: ["", ""]
+  },
+  {
+    id: "eunotia",
+    name: "Eunotia",
+    latinName: "Genus Eunotia",
+    thumb: "assets/CollegeCreek/IMG_0899.JPG",
+    images: [
+      {
+        src: "assets/CollegeCreek/IMG_0899.JPG",
+        location: "CollegeCreek",
+        notes: ""
+      },
+      {
+        src: "assets/CollegeCreek/IMG_0900.JPG",
+        location: "CollegeCreek",
+        notes: ""
+      },
     ],
     habitat: "",
     diet: "",
@@ -903,5 +985,6 @@ const plankton = [
   //   classification: "",
   //   facts: ["", ""]
   // }
+  
   
 ];
