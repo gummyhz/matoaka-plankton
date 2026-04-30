@@ -54,6 +54,9 @@ th, td {
 .background {
   margin: 1em;
 }
+.background p, ul {
+  font-size: 1.25rem;
+}
 
 #hero-title {
     font-size: 4rem;
