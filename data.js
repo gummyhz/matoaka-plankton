@@ -349,9 +349,9 @@ const plankton = [
     facts: ["Fun", "facts"]
   },
   {
-    id: "daphnia",
-    name: "Daphnia",
-    latinName: "Genus Daphnia",
+    id: "cladocerans",
+    name: "Cladocera",
+    latinName: "Superorder Cladocera/Diplostraca",
     thumb: "assets/Berkeley/IMG_0911.JPG",
     images: [
       {
@@ -524,7 +524,7 @@ const plankton = [
     habitat: "Habitat: primarily freshwater",
     diet: "Diet: algae, bacteria, protozoa",
     predators: "Predators: larvae of invertebrates, fish, midges, ...",
-    classification: "Kingdom: Animalia\n  Phylum: Arthropoda\n Clade: Pancrustacea\n Class: Branchiopoda\n Subclass: Phyllopoda\n Superorder: Diplostraca\n Order: Anomopoda\n Family: Daphniidae\n Genus: Daphnia",
+    classification: "Kingdom: Animalia\n  Phylum: Arthropoda\n Clade: Pancrustacea\n Class: Branchiopoda\n Subclass: Phyllopoda\n Superorder: Diplostraca",
     facts: ["Fun", "facts"]
   },
   {
