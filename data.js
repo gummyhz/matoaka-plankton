@@ -2,7 +2,7 @@ const plankton = [
   {
     id: "copepod",
     name: "Copepod",
-    latinName: "Order Copepoda",
+    latinName: "Class Copepoda",
     thumb: "assets/Berkeley/IMG_0909.JPG",
     images: [
       {
