@@ -43,6 +43,28 @@ marker_strawberry.bindPopup("Strawberry Creek");
 marker_strawberry.on('click', () => buildAllImagesGallery("Strawberry Creek"));
 
 
+// alternate labels for taking pictures of the map
+// var tooltip = L.tooltip({direction: 'left'})
+//     .setLatLng(L.latLng(37.26928, -76.72772))
+//     .setContent('Berkeley Stream')
+//     .addTo(map);
+// var tooltip = L.tooltip({direction: 'left'})
+//     .setLatLng(L.latLng(37.27455, -76.72408))
+//     .setContent('College Creek')
+//     .addTo(map);
+// var tooltip = L.tooltip({direction: 'right'})
+//     .setLatLng(L.latLng(37.26761, -76.72095))
+//     .setContent('Ice House Cove')
+//     .addTo(map);
+// var tooltip = L.tooltip({direction: 'bottom'})
+//     .setLatLng(L.latLng(37.26373, -76.72219))
+//     .setContent('Jamestown Road')
+//     .addTo(map);
+// var tooltip = L.tooltip({direction: 'left'})
+//     .setLatLng(L.latLng(37.26574, -76.72881))
+//     .setContent('Strawberry Creek')
+//     .addTo(map);
+
 function buildGallery() {
   gallery_cont = document.getElementById("gallery-photos");
   gallery_cont.innerHTML = "";
