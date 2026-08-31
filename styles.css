@@ -372,3 +372,95 @@ mark {
 #map { 
   height: 600px; 
 }
+
+#disclaimer {
+  font-size: x-small;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.15rem;
+  }
+
+  /* Hero */
+  #hero-title {
+    font-size: 2.2rem;
+  }
+  #hero-title-small {
+    font-size: 1.1rem;
+  }
+  #hero-subtitle {
+    font-size: 1.4rem;
+  }
+  .hero-image {
+    min-height: 220px;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Photo grid gallery */
+  .top {
+    width: 95vw;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .top ul li {
+    width: 50%;   /* 2 per row instead of 4 */
+    height: 150px;
+  }
+
+  /* Table: let it scroll horizontally instead of blowing out the page */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  th, td {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+
+  /* Profile panel: stack image and info instead of side-by-side */
+  .prof-main {
+    flex-direction: column;
+  }
+  #prof-gallery {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  #prof-main-photo {
+    max-height: 250px;
+  }
+  .prof-top-menu {
+    flex-wrap: wrap;
+  }
+
+  /* Gallery cards (all-images mode) */
+  .all-img-card {
+    width: 45%;   /* 2 per row instead of 5 */
+  }
+
+  /* Map */
+  #map {
+    height: 350px;
+  }
+
+  .gallery-container,
+  .background,
+  .map-container {
+    margin: 0.5rem;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 420px) {
+  .top ul li {
+    width: 100%;  /* single column on very small phones */
+    height: 180px;
+  }
+  .all-img-card {
+    width: 100%;
+  }
+}
