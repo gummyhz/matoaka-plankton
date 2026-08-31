@@ -37,7 +37,7 @@ marker_icehouse.bindPopup("Ice House Cove");
 marker_icehouse.on('click', () => buildAllImagesGallery("Ice House Cove"));
 var marker_jamestown = L.marker([37.26373, -76.72219]).addTo(map);
 marker_jamestown.bindPopup("Jamestown Road");
-marker_jamestown.on('click', () => buildAllImagesGallery("Ice House Cove"));
+marker_jamestown.on('click', () => buildAllImagesGallery("Jamestown Road"));
 var marker_strawberry = L.marker([37.26574, -76.72881]).addTo(map);
 marker_strawberry.bindPopup("Strawberry Creek");
 marker_strawberry.on('click', () => buildAllImagesGallery("Strawberry Creek"));
